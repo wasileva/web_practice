@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>My test website</title>
+        <meta charset = "UTF-8">
+        <meta name = "description" content="Test website">
+        <meta name = "keywords" content="HTML, Pushkin">
+        <meta name = "author" content="Olga Vasileva">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="60">
+    </head>
+    <body style="background-color: bisque;">
+        <iframe src="a.html" width="250" height="150"></iframe>
+        <hr>
+        <a href="https://www.google.com">
+           <button>Google</button>
+        </a>
+        <p id="test">Bye</p>
+        <script>
+            function doSomething(){
+                document.getElementById("test").innerHTML = "Hello";
+            }
+        </script>
+        <hr>
+        <button onclick="doSomething()" style="background-color: #28f005; color:aqua; border-radius: 5px;">Say Hi</button>
+        <!--This is the best website ever-->
+        <a href="page2.html" target=_self title="This takes you to another page">
+        click here
+        </a>
+        <h1 style="color:coral ">My title</h1>
+        <hr>
+        <a href = "https://en.wikipedia.org/wiki/Shrek">
+          <image src = "images/shrek.jpg" height = "300" alt="This is shrek" title = "Shrek is shreksy">
+        </a>
+
+        <audio controls autoplay muted loop>
+            <source src="Joy To The World - Audionautix.mp3"> 
+            <source src="Joy To The World - Audionautix.wav">
+            This brower does not support HTML5 audio
+        </audio>   
+        
+        <video controls autoplay muted loop width="500">
+            <source src = "nature.mp4">
+            <source src = "nature.mov">
+            This browser does not support audio
+        </video>
+
+        <p style="color:blueviolet;">This is normal text</p>
+        <p style="color:rgb(red, green, blue)">This is <b>bold</b> text</p>
+        <p style="color:#28f005">This is <i>italic</i> text</p>
+        <p>This is <big>big</big> text</p>
+        <p>This is <small>small<small>text</p>
+        <p>This is <sub>subscript</sub> text</p>
+        <p>This is <sup>superscript</sup> text</p>
+        <p>This is <ins>inserted</ins> text</p>
+        <p>This is <del>deleted</del> text</p>
+        <p style="background-color:aqua; color:cornflowerblue">This is <mark>marked</mark> text</p>
+
+        <h4>Unordered list</h4>
+        <ul>
+            <li>pizza dough</li>
+            <li>tomato sauce</li>
+            <li>cheese</li>
+            <li>toppings</li>
+                <ul>
+                    <li>mushrooms</li>
+                    <li>pepperoni</li>
+                    <li>peppers</li>
+                </ul>
+        </ul>
+        
+        <h4>Ordered list</h4>
+        <ol type="A">
+            <li>eat breakfast</li>
+            <li>take a shower</li>
+            <li>leave for work</li>
+        </ol>
+         
+        <h4>Description list</h4>
+        <dl>
+            <dt>HTML</dt>
+            <dd>This adds structure to a webpage</dd>
+            <dt>CSS</dt>
+            <dd>This adds style to a webpage</dd>
+            <dt>JavaScript</dt>
+            <dd>This adds functionality to a webpage</dd>
+        </dl>
+
+        <table bgcolor="black" width="700">
+            <tr bgcolor="gray">
+                <th width="100">Sunday</th>
+                <th width="100">Monday</th>
+                <th width="100">Tuesday</th>
+                <th width="100">Wednesday</th>
+                <th width="100">Thursday</th>
+                <th width="100">Friday</th>
+                <th width="100">Suturday</th>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <td>Closed</td>
+                <td>9-17</td>
+                <td>9-17</td>
+                <td>9-17</td>
+                <td>9-17</td>
+                <td>9-17</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+   
+      <div style="background-color: #44444444 ;">
+        <p><span style="color:red">Lorem ipsum dolor</span>, sit amet consectetur adipisicing elit. Ullam, 
+            blanditiis alias. Dolor totam necessitatibus quo libero earum. Voluptates, rem consectetur
+            deleniti saepe quidem, nam ab accusamus impedit ex aliquid tempore?
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, 
+            blanditiis alias. Dolor totam necessitatibus quo libero earum. Voluptates, rem consectetur
+            deleniti saepe quidem, nam ab accusamus impedit ex aliquid tempore?
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, 
+            blanditiis alias. Dolor totam necessitatibus quo libero earum. Voluptates, rem consectetur
+            deleniti saepe quidem, nam ab accusamus impedit ex aliquid tempore?
+        </p>
+    </div>  
+
+    <form action="action_page.php" method=POST>
+        <div>
+            <label for="fname">first name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Jeel" required>
+        </div>    
+        <br>    
+        <div>
+            <label for="lname">last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Brooks" required>
+        </div>
+        <br>
+        <div>
+            <label for="pass">password:</label>
+            <input type="password" id="pass" name="pass" maxlength="12" required>
+        </div>    
+        <br>      
+        <div>
+            <label for="email">e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="123@mail.com" required>
+        </div>
+        <br>      
+        <div>
+            <label for="tel">phone #:</label>
+            <input type="tel" id="email" name="tel" placeholder="(123)-456-7890" required>
+        </div>
+        <br>
+        <div>
+            <label for="bdate">birthdate:</label>
+            <input type="date" id="bdate" name="bdate">
+        </div>      
+        <br>
+        <div>
+            <label for="title">title:</label>  
+
+            <label>Mr.</label>
+            <input type="radio" name="title" value="Mr.">
+
+            <label>Mrs.</label>
+            <input type="radio" name="title" value="Mrs.">
+
+            <label>Phd.</label>
+            <input type="radio" name="title" value="Phd.">
+        </div>
+        <br>
+        <div>
+            <label for="payment">payment:</label>
+            <select id="payment" name="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="subscribe">subscribe:</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+        </div>
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+    </body>
+</html>
