@@ -1,0 +1,282 @@
+body{
+    background: linear-gradient(to top, lightgreen, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#main{
+    background-image: url(sky.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center ;
+}
+
+#box1{
+    border: 5px solid;
+    background: greenyellow;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    padding: 10px;
+    margin: 50px;
+}
+
+#box2{
+    border: 5px solid;
+    background: dodgerblue;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    padding: 10px;
+    margin: 50px;
+}
+
+h1{
+    color:indigo;
+    text-shadow: 0px 2px 1px white;
+}
+
+h2{
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style:double;
+    border-left-width: 10px;
+    border-left-color: gold;
+
+    text-shadow: 0px 0px 5px lightgreen, 0px -5px 1px lightblue;
+}
+
+p{
+    background-color:darkgoldenrod;
+    color:black;
+}
+
+#p1{
+    background-color: white;
+    color:black;
+    font-family: 'Dancing Script', cursive, Georgia, serif;
+    font-style: italic;
+    font-weight:lighter;
+    text-decoration:orange dashed underline;
+    font-size: 28px;
+}
+
+#p2{
+    border-style:outset;
+    border-width: 7px;
+    border-color: greenyellow;
+    border-radius:12px;
+    padding: 5px;
+}
+
+#square1{
+    border: 1px solid;
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+
+    position:fixed;
+    top: 300px;
+    left: 450px;
+}
+
+#square2{
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+#list{
+    border: 1px;
+    width: 100px;
+    height: 100px;;
+    clear:left;
+}
+
+.odd{
+    background: linear-gradient(to left, lightblue, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.even{
+    background: linear-gradient(to right, lightblue, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.box{
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    text-align: center;
+    background:lightseagreen;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    float: left;
+}
+
+
+a:link{
+    color:black
+}
+
+a:visited{
+    color: darkolivegreen;
+}
+
+a:hover{
+    color:blueviolet;
+}
+
+a:active{
+    color:cornflowerblue;
+}
+
+button:active{
+    background-color: white;
+}
+
+button:hover{
+    background-color: gray;
+}
+
+li:nth-child(odd){
+   color:crimson;
+}
+
+li:nth-child(even){
+   background-color: cornflowerblue;
+}
+
+li::before{
+    content: "✔";
+}
+
+#css::after{
+    content: "📌";
+}
+
+#list2 li::after{
+    content:"👍";
+}
+
+#p2::first-letter{
+    font-size: 40px;
+}
+
+li::marker{
+    color:green;
+}
+
+#p2::selection{
+    color: forestgreen;
+    background: gold;
+}
+
+.fa-home{
+    color:blueviolet;
+}
+
+.fa-youtube{
+    color:red;
+}
+
+.fa-twitter{
+    color:cyan;
+}
+
+#bucket{
+    border: 1px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 225px;
+    text-align: center;
+    background: plum;
+
+    transform: translateX(400px);
+    transform: translateY(250px); 
+    transform: scaleX(3);
+    transform: scaleY(3);
+    transform: scale(1,1); 
+    transform: skewX(45deg);
+    transform: skewY(12deg);
+    transform: skew(12deg, 14deg); 
+    transform: rotateX(180deg);
+    transform: rotateY(10deg);
+    transform: rotateZ(170deg);
+    transform: translate(400px, -245px);
+   
+
+    /*
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    
+    matrix combines the following:
+   
+     scaleX(),
+     skewY(),
+     skewX(),
+     scaleY(),
+     translateX(),
+     translateY()
+    */
+}
+
+#cube{
+    border: 1px solid;
+    width: 250px;
+    height: 250px;
+    background: yellowgreen;
+    font-size: 225px;
+    text-align: center;
+/*
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation: mySlide;
+*/
+animation: 3s linear 0s infinite running myColorChange;
+    
+}
+
+@keyframes mySlide{
+    from{margin-left: 0%;}
+    to{margin-left: 100%;}
+}
+
+@keyframes myWidth{
+    100%{width: 100px;}
+}
+
+@keyframes myRotate{
+    50%{transform: rotateZ(360deg)};
+}
+
+@keyframes myOpacity{
+    50%{opacity: 0;}
+}
+
+@keyframes myScale{
+    50%{transform: scale(0.5, 0.5);}
+}
+
+@keyframes myColorChange{
+    20%{background-color: rgb(14, 203, 105);}
+    40%{background-color: rgb(220, 227, 18);}
+    60%{background-color: rgb(214, 132, 24);}
+    80%{background-color: rgb(65, 20, 229);}
+    100%{background-color: rgb(216, 16, 153);}
+}
+#cube:hover {
+    animation: 3s linear 0s infinite running mySlide;
+}
