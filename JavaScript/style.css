@@ -1,0 +1,57 @@
+#counter{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
+
+#rollBtn, #subscribeBtn, #paymentBtn, #beginBtn, #winBtn{
+    margin-bottom: 20px;
+}
+
+#guessBtn{
+    margin-bottom: 40px;
+}
+
+#tempLabel{
+    color: red;
+    font-size: 20px;
+}
+
+#innerDiv, #outerDiv{
+    border: 1px solid;
+    background-color: lightskyblue;
+}
+
+#outerDiv{
+    width: 200px;
+    height: 200px;
+}
+
+#innerDiv{
+    width: 100px;
+    height: 100px;
+}
+
+#myImg{
+    margin: 20px;
+    width: 300px;
+}
+
+#myDiv, #mySquare{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    position: relative;
+}
+
+#myDiv{
+    background-color: pink;
+}
+
+#mySquare{
+    background-color: rgb(227, 29, 29);
+}
+
+#myCanvas{
+    border: 1px solid;
+}
