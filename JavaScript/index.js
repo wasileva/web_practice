@@ -578,7 +578,7 @@ console.log(store.size);
 store.forEach((value, key)=>console.log(`${key} $${value}`));
 
 //------------------42-------------------
-
+//Object
 const car = {
     make: "Nissan",
     model: "Altima",
