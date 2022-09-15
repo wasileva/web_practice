@@ -1,0 +1,3 @@
+I am testing AJAX
+<br>
+It is working
